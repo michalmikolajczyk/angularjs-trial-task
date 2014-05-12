@@ -23,4 +23,4 @@ odnośnie samej aplikacji:
 * Aplikację można uruchomić w wersji deweloperskiej poprzez wpisanie komendy *grunt serve*
 * Aplikację można zbudować do wersji produkcyjnej poprzez wpisanie komendy *grunt build* (zostanie utworzona w katalogu *dist*)
 * Testy można uruchomić poprzez komendę *grunt test*
-* Wersja produkcyjna nie jest zawarta w tym repozytorium. Zostanie ona przesłana na email
+* Wersja produkcyjna jest spakowana do pliku dist.tar.gz, zawartego w tym repozytorium 
