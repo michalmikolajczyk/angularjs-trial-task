@@ -1,0 +1,30 @@
+<div class="header">
+  <h1 class="text-muted">Mindbox - zadanie AngularJS</h1>
+</div>
+
+<div class="jumbotron">
+  <h2>'Allo, 'allo!</h2>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Scaffolded by Michał Mikołajczyk with Yeoman
+  </p>
+</div>
+
+<div>
+  <h2>Ulubieni pisarze:</h2>
+  <div class="checkbox" ng-repeat="name in names">
+    <label>
+      <input type="checkbox" ng-click="createArray()" ng-model="name.checked">
+      {{name.fname}} {{name.sname}}
+    </label>
+  </div>
+  <button ng-disabled="sendArray.length === 0" type="button" class="btn btn-success" ng-click="sendNames()">Wyślij zaznaczonych</button>
+</div>
+
+<div class="response-cont">
+  <div ng-if="showResponse" class="slide">
+    <h2>Odpowiedź:</h2>
+    <p ng-repeat="name in apiResponse">{{name.fname}} {{name.sname}}</p>
+  </div>
+</div>
+
